@@ -4,15 +4,20 @@
 #include<iostream>
 #include<ctime>
 int main(){
-    //lab1_1_tests();
-   // std::cout << "All tests passed!" << std::endl;
-    //lab1_2();
-    //lab1_3();
-    //lab1_4();
-    lab1_5();
-    //lab1_6();
-    // lab1_7_1();
-    // lab1_7_2();
-    //lab1_9();
+    long double x,y;
+    std::vector<Point> tr = {Point(0,0), Point(0,0), Point(0,0)};
+    for (size_t i = 0; i < 3; i++)
+    {
+        std::cin>>tr[i].x >> tr[i].y;
+    }
+    
+    while (true)
+    {
+        std::cin>>x>>y;
+        if (x == 0 && y ==0) break;
+        in_triangle(tr,Point(x,y));
+    }
+    
+    
     return 0;
 }
