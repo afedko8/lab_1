@@ -1,0 +1,16 @@
+15
+Stud_A 20 5 5 5 5 5
+Stud_B 20 4 4 4 4 5
+Stud_C 20 4 4 4 4 4
+Stud_D 20 3 3 2 4 4
+Stud_E 10 5 5 5 5 4
+Stud_F 10 4 4 4 4 4
+Stud_G 10 3 3 3 4 4
+Stud_H 10 2 4 4 5 5
+Stud_I 10 2 2 3 4 4
+Stud_J 30 5 5 5 5 5
+Stud_K 30 5 5 4 5 4
+Stud_L 30 4 4 4 4 4
+Stud_M 30 3 2 4 4 4
+Stud_N 30 2 3 5 5 5
+Stud_O 30 2 2 2 3 4
