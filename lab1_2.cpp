@@ -31,5 +31,5 @@ void lab1_2(){
     int ans = 0;
     if (cnt != 0) ans = sum/cnt;
     
-    printf("a) %d b) %d c) %d d) %d a) %d ", ans, max-min, cnt5, cnt2, cntd);
+    printf("a) %d b) %d c) %d d) %d e) %d ", ans, max-min, cnt5, cnt2, cntd);
 }

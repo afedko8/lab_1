@@ -4,20 +4,20 @@
 #include<iostream>
 #include<ctime>
 int main(){
-    long double x,y;
-    std::vector<Point> tr = {Point(0,0), Point(0,0), Point(0,0)};
-    for (size_t i = 0; i < 3; i++)
-    {
-        std::cin>>tr[i].x >> tr[i].y;
-    }
+    // long double x,y;
+    // std::vector<Point> tr = {Point(0,0), Point(0,0), Point(0,0)};
+    // for (size_t i = 0; i < 3; i++)
+    // {
+    //     std::cin>>tr[i].x >> tr[i].y;
+    // }
     
-    while (true)
-    {
-        std::cin>>x>>y;
-        if (x == 0 && y ==0) break;
-        in_triangle(tr,Point(x,y));
-    }
+    // while (true)
+    // {
+    //     std::cin>>x>>y;
+    //     if (x == 0 && y ==0) break;
+    //     in_triangle(tr,Point(x,y));
+    // }
     
-    
+    lab1_2();
     return 0;
 }
