@@ -22,5 +22,4 @@ void lab1_3(){
         
     }
     std::clock_t end = std::clock();
-    std::cout<<static_cast<double>(end-start)/CLOCKS_PER_SEC<<std::endl;
 }
