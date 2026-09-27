@@ -7,7 +7,7 @@ bool is_pow(int x){
     return ((x&(x-1)) == 0) ? 1:0;
 }
 
-void lab1_4(){
+int main(){
     std::vector<int> v(15);
     for (size_t i = 0; i < v.size(); i++)
     {
@@ -18,7 +18,7 @@ void lab1_4(){
         int mini = v[i*5];
         for (size_t j = 5*i; j < 5*(i+1); j++)
         {
-            if (v[i]< mini) mini = v[i];
+            if (v[j]< mini) mini = v[j];
             
         }
         std::cout<<mini << ' ';
@@ -59,6 +59,5 @@ void lab1_4(){
         }
     }
     std::cout<<index<<std::endl;
-    
-    
+    return 0;
 }

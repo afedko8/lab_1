@@ -1,7 +1,7 @@
 #include<iostream>
 #include "lab1.h"
 
-void lab1_5(){
+int main(){
     std::vector<int> a = {1,2,3,-1,-5};
     std::vector<int> b = {-1,-2,1,2,3};
     for (size_t i = 0; i < a.size(); i++)
@@ -9,8 +9,8 @@ void lab1_5(){
         if (a[i]< 0)
         {
             size_t j = 0;
-            while (b[j]<0) j++;
-            if (j>b.size()) a[i] = 0;
+            while (j< b.size() && b[j]<0) j++;
+            if (j>=b.size()) a[i] = 0;
             else std::swap(a[i],b[j]);
         }
         
@@ -29,4 +29,5 @@ void lab1_5(){
     {
         std::cout<<b[i]<<' ';
     }
+    return 0;
 }
