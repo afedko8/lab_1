@@ -1,9 +1,13 @@
 #include<iostream>
+#include<vector>
 #include "lab1.h"
 
 int main(){
-    std::vector<int> a = {1,2,3,-1,-5};
-    std::vector<int> b = {-1,-2,1,2,3};
+    std::vector<int> a(5);
+    std::vector<int> b(5);
+    for (size_t i = 0; i < a.size(); i++) std::cin>>a[i];
+    for (size_t i = 0; i < b.size(); i++) std::cin>>b[i];
+    
     for (size_t i = 0; i < a.size(); i++)
     {
         if (a[i]< 0)
