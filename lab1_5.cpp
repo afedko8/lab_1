@@ -21,8 +21,12 @@ int main(){
     }
     for (size_t i = 0; i < b.size(); i++)
     {
-        if (b[i]>0) b[i]=0;
-        
+        if (b[i]>0){
+            size_t j = 0;
+            while (j < b.size() && a[j]>0) j++;
+            if (j<b.size()) a[j]=b[i];
+            b[i]=0;
+        }
     }
     for (size_t i = 0; i < a.size(); i++)
     {
