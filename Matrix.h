@@ -1,6 +1,7 @@
 #pragma once
 #include<vector>
 #include<iostream>
+#include<iomanip>
 
 template<typename T>
 class Matrix
@@ -35,11 +36,22 @@ Matrix<T>::~Matrix() {}
 
 template<typename T>
 void Matrix<T>::print(){
+    size_t width=0;
+    for (size_t i = 0; i < rows; i++)
+    {
+        for (size_t j = 0; j < coll; j++)
+        {
+            width = std::max(width, std::to_string(matrix[i][j]).size());
+        }
+        
+    }
+    
+
     for (size_t i = 0; i < this->rows; i++)
     {
         for (size_t j = 0; j < this->coll; j++)
         {
-            std::cout<<matrix[i][j]<< ' ';
+            std::cout<<std::setw(width+1)<<matrix[i][j]<< ' ';
         }
         std::cout<<std::endl;
     }
