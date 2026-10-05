@@ -1,13 +1,10 @@
 #include<iostream>
 #include<ctime>
 bool is_prime(unsigned int x){
-    if (x%2==0 && x!=2) return 0;
-    
-    for (size_t i = 3; i <  static_cast<int>(std::sqrt(x))+1; i+=2)
-    {
-        if (x%i == 0) return 0;
-        
-    }
+    if(x<2) return 0;
+    if (x==2) return 1;
+    if (x%2==0) return 0;
+    for (size_t i = 3; i < static_cast<size_t>(std::sqrt(x))+1; i+=2) if (x%i == 0) return 0;
     return 1;
 }
 

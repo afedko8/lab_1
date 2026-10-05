@@ -5,9 +5,9 @@ void lab1_6(){
     long long x0,x,xd;
     long double a,b,c;
     std::cin>>x0>>x>>xd>>a>>b>>c;
-    long long A = static_cast<long>(a);
-    long long B = static_cast<long>(b);
-    long long C = static_cast<long>(c);
+    long long A = static_cast<long long>(a);
+    long long B = static_cast<long long>(b);
+    long long C = static_cast<long long>(c);
     bool decimal = ((A | B) & (A | C)) != 0;
     long double f; 
 

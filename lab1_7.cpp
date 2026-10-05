@@ -9,7 +9,7 @@ void lab1_7_1(){
     a.input();
     b.input();
     a.mult(b);
-    a.print();
+    a.print()
 }
 void lab1_7_2(){
     Matrix<int> a(3,2);
