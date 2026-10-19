@@ -1,7 +1,6 @@
 #include<iostream>
-#include"lab1.h"
 
-void lab1_6(){
+int main(){
     long double x0,x,dx;
     long double a,b,c;
     std::cin>>x0>>x>>dx>>a>>b>>c;
@@ -35,5 +34,5 @@ void lab1_6(){
         }
         std::cout<<std::endl;
     }
-    
+    return 0;
 }

@@ -45,7 +45,7 @@ void lab1_9(){
             std::cout<< st[i].name << ' ' << st[i].group_number<< std::endl;
         }
     }
-    if (!valid) std::cout<< "None of the students achieved an average grade of 4.0 or higher"<< std::endl;
+    if (!valid) std::cout<< "None of the students achieved an average grade higher 4.0 "<< std::endl;
     
     std::vector<Group_stats> groups;
     for (size_t i = 0; i < st.size(); i++)
@@ -77,4 +77,9 @@ void lab1_9(){
         std::cout << groups[i].group_number << ' ' << groups[i].total_students << ' ' << groups[i].failing_students << std::endl;
     }
     
+}
+
+int main(){
+    lab1_9();
+    return 0;
 }
